@@ -209,17 +209,17 @@ mark {
     transform: scale(1.1);
 }
 .redes-sociais a {
-  font-size: 30px; /* Tamanho do ícone */
+  font-size: 30px; 
   margin: 0 10px;
-  color: #ff4500; /* Cor laranja que você está usando */
+  color: #ff4500; 
   text-decoration: none;
   transition: 0.3s;
   width: 100%;
 }
 
 .redes-sociais a:hover {
-  color: #25d366; /* Muda para verde ao passar o mouse (cor do whats) */
-  transform: scale(1.1); /* Dá um leve aumento */
+  color: #25d366; 
+  transform: scale(1.1); 
 }
 h4 {
     text-align: center;
@@ -232,16 +232,16 @@ h4 {
     display: flex;
     justify-content: space-between; /* Mantém o texto de um lado e ícones do outro, como no topo */
     align-items: center;
-    padding: 10px 5%; /* Exatamente o mesmo padding da nav superior */
-    background-color: #ffffff; /* Mesma cor de fundo */
-    border-top: 1px solid #eee; /* Borda no topo em vez debaixo */
-    min-height: 91px; /* Aproximadamente a altura da sua nav superior com a logo */
+    padding: 10px 5%; 
+    background-color: #ffffff; 
+    border-top: 1px solid #eee; 
+    min-height: 91px; 
     margin-top: 40px;
 }
 
 .fundossite h4 {
-    margin: 0; /* Remove as margens extras que estavam empurrando a barra */
-    font-size: 1rem; /* Tamanho ajustado para caber na linha */
+    margin: 0; 
+    font-size: 1rem; 
     color: #1a1c1d;
     text-transform: uppercase;
     font-weight: 600;
@@ -254,8 +254,8 @@ h4 {
 }
 
 .redes-sociais a {
-    font-size: 24px; /* Tamanho equilibrado */
-    color: #ff5722; /* Laranja da sua marca */
+    font-size: 24px; 
+    color: #ff5722; 
     text-decoration: none;
     transition: 0.3s;
 }
@@ -275,16 +275,15 @@ h4 {
     }
 }
 @media (max-width: 768px) {
-    /* Ajustes no Cabeçalho */
     header {
-        flex-direction: column; /* Faz o logo e o menu ficarem um embaixo do outro */
+        flex-direction: column; 
         text-align: center;
         padding: 10px;
     }
 
     nav ul {
         display: flex;
-        flex-wrap: wrap; /* Permite que os itens do menu quebrem linha se não couberem */
+        flex-wrap: wrap;
         justify-content: center;
         gap: 10px;
         padding: 0;
@@ -292,11 +291,11 @@ h4 {
 
     /* Ajustes de Texto */
     body {
-        padding: 0 15px; /* Adiciona um respiro nas laterais para o texto não encostar na borda */
+        padding: 0 15px; 
     }
 
     h1, h2 {
-        font-size: 1.5rem; /* Diminui o tamanho das fontes para caber na tela */
+        font-size: 1.5rem; 
     }
 
     p {
@@ -307,12 +306,12 @@ h4 {
     /* Galeria de Fotos */
     .galeria {
         display: flex;
-        flex-direction: column; /* Faz as fotos ficarem uma embaixo da outra */
+        flex-direction: column; 
         align-items: center;
     }
 
     .galeria img {
-        width: 100%; /* A imagem ocupa a largura total disponível */
+        width: 100%; 
         max-width: 400px;
         margin-bottom: 20px;
     }
