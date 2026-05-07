@@ -274,3 +274,46 @@ h4 {
         text-align: center;
     }
 }
+@media (max-width: 768px) {
+    /* Ajustes no Cabeçalho */
+    header {
+        flex-direction: column; /* Faz o logo e o menu ficarem um embaixo do outro */
+        text-align: center;
+        padding: 10px;
+    }
+
+    nav ul {
+        display: flex;
+        flex-wrap: wrap; /* Permite que os itens do menu quebrem linha se não couberem */
+        justify-content: center;
+        gap: 10px;
+        padding: 0;
+    }
+
+    /* Ajustes de Texto */
+    body {
+        padding: 0 15px; /* Adiciona um respiro nas laterais para o texto não encostar na borda */
+    }
+
+    h1, h2 {
+        font-size: 1.5rem; /* Diminui o tamanho das fontes para caber na tela */
+    }
+
+    p {
+        font-size: 1rem;
+        line-height: 1.6;
+    }
+
+    /* Galeria de Fotos */
+    .galeria {
+        display: flex;
+        flex-direction: column; /* Faz as fotos ficarem uma embaixo da outra */
+        align-items: center;
+    }
+
+    .galeria img {
+        width: 100%; /* A imagem ocupa a largura total disponível */
+        max-width: 400px;
+        margin-bottom: 20px;
+    }
+}
