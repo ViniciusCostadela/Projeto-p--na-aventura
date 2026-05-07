@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Inter:wght@400;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    /* Alterado para um laranja bem suave conforme pedido */
+    background-color: #f5efed; 
+    color: #1a1c1d;
+}
+
+/* --- NAVEGAÇÃO --- */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 5%;
+    background-color: #ffffff;
+    border-bottom: 1px solid #eee;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo img {
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* Estilo para o Nome da Empresa Centralizado */
+.nome-empresa-centro {
+    flex: 1;
+    text-align: center;
+}
+
+.nome-empresa-centro h1 {
+    font-family: 'Amatic SC', cursive;
+    font-size: 3rem;
+    color: #ff5722; /* Laranja da marca */
+    margin: 0;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.links ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.links ul li a {
+    text-decoration: none;
+    color: #1a1c1d;
+    font-weight: 600;
+    font-size: 0.85rem;
+    transition: color 0.3s ease;
+}
+
+.links ul li a:hover {
+    color: #ff5722; 
+}
+
+/* --- TEXTO DE APRESENTAÇÃO --- */
+.text {
+    max-width: 1100px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 60px 20px 40px 20px;
+}
+
+.text h1 {
+    font-size: 2.8rem;
+    margin-bottom: 25px;
+    font-family: 'Amatic SC', cursive;
+    color: #ff5722;
+}
+
+.text h3 {
+    font-size: 1.15rem;
+    line-height: 1.8;
+    color: #ff5722;
+    font-family: "Sniglet", system-ui;
+}
+
+mark {
+    background-color: #850909;
+    color: white;
+    padding: 0 5px;
+    border-radius: 3px;
+}
+
+/* --- GALERIA AUTOMÁTICA --- */
+.slider-container {     
+    padding: 20px 0;
+    margin: 20px 0;
+    width: 100%;
+}
+
+.slider-container h1 {
+    text-align: center;
+    color: #1a1c1d;
+    font-size: 2rem;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+}
+
+.slider-wrapper {
+    overflow: hidden;
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.slider-galeria-content {
+    display: flex;
+    gap: 20px;
+    width: calc((250px * 8) + (20px * 7)); 
+    animation: scroll 25s linear infinite;
+}
+
+.slider-galeria-content:hover {
+    animation-play-state: paused;
+}
+
+.slide1 img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+@keyframes scroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(calc(-50% - 10px)); }
+}
+
+/* --- PRÓXIMOS DESTINOS --- */
+.titulo-secao {
+    text-align: center;
+    margin: 60px 0 30px 0;
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+.slider-destino-content {
+    display: flex;
+    justify-content: center; 
+    flex-wrap: wrap;       
+    gap: 20px;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding-bottom: 80px;
+}
+
+.slide-info {
+    position: relative;
+    width: 250px;
+    height: 350px;
+    overflow: hidden;
+    border-radius: 15px;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.slide-info img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease, filter 0.5s ease;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+.overlay span {
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 700;
+    border: 2px solid white;
+    padding: 8px 15px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.slide-info:hover .overlay {
+    opacity: 1;
+}
+
+.slide-info:hover img {
+    filter: blur(3px);
+    transform: scale(1.1);
+}
+.redes-sociais a {
+  font-size: 30px; /* Tamanho do ícone */
+  margin: 0 10px;
+  color: #ff4500; /* Cor laranja que você está usando */
+  text-decoration: none;
+  transition: 0.3s;
+  width: 100%;
+}
+
+.redes-sociais a:hover {
+  color: #25d366; /* Muda para verde ao passar o mouse (cor do whats) */
+  transform: scale(1.1); /* Dá um leve aumento */
+}
+h4 {
+    text-align: center;
+    margin: 60px 0 30px 0;
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+/* --- NAVEGAÇÃO DE RODAPÉ (REDES SOCIAIS) --- */
+.fundossite {
+    display: flex;
+    justify-content: space-between; /* Mantém o texto de um lado e ícones do outro, como no topo */
+    align-items: center;
+    padding: 10px 5%; /* Exatamente o mesmo padding da nav superior */
+    background-color: #ffffff; /* Mesma cor de fundo */
+    border-top: 1px solid #eee; /* Borda no topo em vez debaixo */
+    min-height: 91px; /* Aproximadamente a altura da sua nav superior com a logo */
+    margin-top: 40px;
+}
+
+.fundossite h4 {
+    margin: 0; /* Remove as margens extras que estavam empurrando a barra */
+    font-size: 1rem; /* Tamanho ajustado para caber na linha */
+    color: #1a1c1d;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.redes-sociais {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.redes-sociais a {
+    font-size: 24px; /* Tamanho equilibrado */
+    color: #ff5722; /* Laranja da sua marca */
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.redes-sociais a:hover {
+    color: #25d366; 
+    transform: scale(1.2);
+}
+
+/* Responsividade simples para telas pequenas */
+@media (max-width: 600px) {
+    .fundossite {
+        flex-direction: column;
+        gap: 15px;
+        padding: 20px 5%;
+        text-align: center;
+    }
+}
