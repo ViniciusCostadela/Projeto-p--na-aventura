@@ -116,3 +116,75 @@
 .btn-saiba-mais:hover {
     background: #e64a19;
 }
+/* RODAPÉ ESTRUTURA FIXA */
+.fundossite {
+    background-color: #fff;
+    border-top: 1px solid #eee;
+    height: 80px; /* Altura cravada igual ao cabeçalho */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 40px;
+    overflow: hidden; /* Garante que nada saia para fora */
+}
+
+.container-rodape {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1240px; /* Um pouco mais largo para caber a letra maior */
+}
+
+.rodape-esq {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Espaço maior entre texto e ícones */
+}
+
+/* LETRA MAIOR */
+.txt-rodape-grande {
+    font-family: 'Inter', sans-serif;
+    font-weight: 800; /* Mais negrito para destacar */
+    font-size: 0.9rem; /* Aumentado de 0.75 para 0.9 */
+    color: #1a1c1d;
+    letter-spacing: 0.5px;
+}
+
+/* ÍCONES MAIORES */
+.redes-sociais-grande {
+    display: flex;
+    gap: 15px;
+}
+
+.redes-sociais-grande i {
+    font-size: 1.8rem; /* Ícones bem maiores e visíveis */
+    color: #1a1c1d;
+    transition: all 0.3s ease;
+}
+
+.redes-sociais-grande i:hover {
+    color: #ff5722;
+    transform: scale(1.2); /* Eles crescem um pouco no hover */
+}
+
+/* BOTÃO (Mantendo o tamanho que já estava bom) */
+.btn-ebook-destaque {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background-color: #1a1c1d;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 0.85rem;
+    transition: all 0.3s ease;
+}
+
+.btn-ebook-destaque:hover {
+    background-color: #ff5722;
+    transform: translateY(-2px);
+}
