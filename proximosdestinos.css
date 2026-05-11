@@ -52,28 +52,6 @@
     transition: transform 0.5s ease;
 }
 
-.overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5); /* Tarja preta transparente */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    opacity: 0;
-    transition: opacity 0.3s ease;
-}
-
-.overlay span {
-    color: white;
-    font-family: 'Amatic SC', cursive;
-    font-size: 2rem;
-    border: 2px solid white;
-    padding: 5px 15px;
-}
-
 /* Interação de Hover */
 .card-destino:hover .img-container img {
     transform: scale(1.1);
@@ -120,12 +98,12 @@
 .fundossite {
     background-color: #fff;
     border-top: 1px solid #eee;
-    height: 80px; /* Altura cravada igual ao cabeçalho */
+    height: 80px; 
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 0 40px;
-    overflow: hidden; /* Garante que nada saia para fora */
+    overflow: hidden; 
 }
 
 .container-rodape {
@@ -133,20 +111,20 @@
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    max-width: 1240px; /* Um pouco mais largo para caber a letra maior */
+    max-width: 1240px; 
 }
 
 .rodape-esq {
     display: flex;
     align-items: center;
-    gap: 20px; /* Espaço maior entre texto e ícones */
+    gap: 20px; 
 }
 
 /* LETRA MAIOR */
 .txt-rodape-grande {
     font-family: 'Inter', sans-serif;
-    font-weight: 800; /* Mais negrito para destacar */
-    font-size: 0.9rem; /* Aumentado de 0.75 para 0.9 */
+    font-weight: 800; 
+    font-size: 0.9rem; 
     color: #1a1c1d;
     letter-spacing: 0.5px;
 }
@@ -158,14 +136,14 @@
 }
 
 .redes-sociais-grande i {
-    font-size: 1.8rem; /* Ícones bem maiores e visíveis */
+    font-size: 1.8rem; 
     color: #1a1c1d;
     transition: all 0.3s ease;
 }
 
 .redes-sociais-grande i:hover {
     color: #ff5722;
-    transform: scale(1.2); /* Eles crescem um pouco no hover */
+    transform: scale(1.2); 
 }
 
 /* BOTÃO (Mantendo o tamanho que já estava bom) */
